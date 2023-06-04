@@ -7,7 +7,12 @@ from .managers import CustomUserManager
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
+    
+    ## main
     email = models.EmailField(_("email address"), unique=True)
+    seller_name = models.CharField(_("Seller name"), unique=True, max_length=500, default='no name')
+    
+    ## other
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     date_joined = models.DateTimeField(default=timezone.now)
