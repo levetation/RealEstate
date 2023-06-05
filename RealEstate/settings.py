@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     "users", # new
+
+    ## pip install "django-phonenumber-field[phonenumbers]"
+    "phonenumber_field",
 ]
 
 MIDDLEWARE = [
