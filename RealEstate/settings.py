@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "users", # new
 
     ## pip install "django-phonenumber-field[phonenumbers]"
+    # https://django-phonenumber-field.readthedocs.io/en/latest/
     "phonenumber_field",
 ]
 
